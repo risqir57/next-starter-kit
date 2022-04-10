@@ -1,0 +1,43 @@
+{
+  "name": "next-starter-kit",
+  "version": "0.1.0",
+  "private": false,
+  "author": {
+    "name": "Risqi Romadhoni",
+    "email": "risqir57@gmail.com",
+    "url": "https://risqiromadhoni.vercel.app"
+  },
+  "engines": {
+    "node": ">=16.x <=18.x",
+    "yarn": ">=1.22.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risqir57/next-starter-kit.git"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "list:ts": "tsc",
+    "lint:checker": "yarn lint && yarn list:ts",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "12.1.4",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/node": "17.0.23",
+    "@types/react": "18.0.1",
+    "@types/react-dom": "18.0.0",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4",
+    "husky": "^7.0.0",
+    "typescript": "4.6.3"
+  }
+}
