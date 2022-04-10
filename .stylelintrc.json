@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ],
+  "plugins": ["stylelint-prettier"],
+  "rules": {
+    "no-extra-semicolons": true,
+    "no-eol-whitespace": true,
+    "declaration-block-trailing-semicolon": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null,
+    "prettier/prettier": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "prettier.tabWidth": 2,
+  "stylelint.validate": ["scss"],
+  "scss.validate": true,
+  "files.associations": {
+    "*.scss": "postcss"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "scss"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+}

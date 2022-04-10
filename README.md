@@ -18,11 +18,27 @@
 
 ---
 
-## Getting Started
+## 🏁 Getting Started
 - If using Node Version Manager [NVM](https://github.com/nvm-sh/nvm), create file `.huskyrc` in the root:
     > @ref https://typicode.github.io/husky/#/?id=command-not-found
 
-    ```bashrc
+    ```sh
     export NVM_DIR="$HOME/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    ```
+
+## 🤔 How To
+- Checking code for identifying and reporting on patterns.
+    > Using [Eslint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/)
+
+    ```sh
+    # Check all code is clean
+    yarn checker
+    ```
+
+- Auto format/fix patterns.
+
+    ```sh
+    # Fix code
+    yarn formatter
     ```
