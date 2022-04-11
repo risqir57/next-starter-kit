@@ -3,3 +3,4 @@
 /node_modules
 /.next
 /.vscode
+/.src/__stories__/assets

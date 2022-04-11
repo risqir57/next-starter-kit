@@ -33,3 +33,12 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# Storybook
+/storybook-static
+
+# .bak file
+/**/*.bak
+
+# Code Editor
+.vscode

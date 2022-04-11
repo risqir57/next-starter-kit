@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { FC } from 'react';
 
 import styles from './Home.module.css';
 
-const HomeContainer = () => {
+const HomeContainer: FC = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -58,7 +59,12 @@ const HomeContainer = () => {
           rel="noopener noreferrer">
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image
+              src="/assets/svg/vercel.svg"
+              alt="Vercel Logo"
+              width={72}
+              height={16}
+            />
           </span>
         </a>
       </footer>

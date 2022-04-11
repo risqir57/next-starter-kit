@@ -10,6 +10,7 @@
     "declaration-block-trailing-semicolon": null,
     "no-descending-specificity": null,
     "property-no-vendor-prefix": null,
-    "prettier/prettier": true
+    "prettier/prettier": true,
+    "selector-class-pattern": null
   }
 }

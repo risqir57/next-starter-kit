@@ -42,3 +42,67 @@
     # Fix code
     yarn formatter
     ```
+
+## 📗 Storybook
+  > Storybook command is under script:
+
+  ```sh
+  # run storybook under development
+  yarn storybook
+  # AND
+  # generate storybook statsic build, this will create folder storybook-static
+  yarn storybook:build
+  ```
+
+## ⌨️ Optimize Code Editor
+  - Visual studio code:
+  
+    > Create file name `settings.json` under .vscode
+    ```json
+    {
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true,
+      "prettier.tabWidth": 2,
+      "stylelint.validate": ["css", "scss"],
+      "css.validate": true,
+      "scss.validate": true,
+      "files.associations": {
+        "*.scss": "postcss"
+      },
+      "emmet.includeLanguages": {
+        "postcss": "scss"
+      },
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+      },
+    }
+    ```
+
+## 🗺 App Structure
+> This app concerned with split code.
+
+```txt
+.
+├── .husky                => Husky root hooks
+│   ├── commit-msg        => Husky hooks to lint commit with commitlint
+│   └── pre-commit        => Husky hooks to run static test
+├── public                => Public root, every file under this folder can access from web root
+│   ├── assets            => Public assets, can access from url /assets
+│   └── favicon.ico       => App icon
+├── src                   => Base app root directory
+│   ├── __stories__       => Store any storybook component
+│   ├── __test__          => Unit test folder, using Jest as engine
+│   ├── containers        => Store page view, logic, combine with component, HOC, and Layout
+│   ├── pages             => Next.js pages folder, this file only call view from container folder, data SSG fetching
+│   ├── styles            => Store global style and mix external css and font family
+│   └── types             => Custom type definition
+├── commitlint.config.js  => Commitlint configuration
+├── jest.config.js        => Jest configuration
+├── jest.setup.js         => Jest setup for running firstly wehn test is running using jest
+├── next-env.d.ts         => (Don't Edit)! Next.js type definition auto genearted every app running
+├── next.config.js        => Next.js configuration
+├── package.json          => Third party package manager
+├── tsconfig.json         => Typescript configuration
+└── yarn.lock             => (Don't Edit)! Yarn lock file, auto generated
+```
